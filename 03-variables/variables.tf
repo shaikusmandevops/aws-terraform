@@ -1,6 +1,6 @@
 output "fruit_name" {
-  value = "mango"
+  value = var.name_of_the_fruit
 }
 variable "name_of_the_fruit" {
-  default = var.name_of_the_fruit
+  default = "mango"
 }
