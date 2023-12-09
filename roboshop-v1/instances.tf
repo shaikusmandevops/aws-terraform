@@ -4,7 +4,7 @@ resource "aws_instance" "frontend" {
   vpc_security_group_ids = ["sg-0f7763ae0b14dcafe"]
 
 tags = {
-    Name = "red_hat_linux_os_emi"
+    Name = "frontend"
   }
 }
 resource "aws_instance" "mongodb" {
@@ -13,7 +13,7 @@ resource "aws_instance" "mongodb" {
   vpc_security_group_ids = ["sg-0f7763ae0b14dcafe"]
 
   tags = {
-    Name = "red_hat_linux_os_emi"
+    Name = "mongodb"
   }
 }
 resource "aws_instance" "catalogue" {
@@ -22,7 +22,7 @@ resource "aws_instance" "catalogue" {
   vpc_security_group_ids = ["sg-0f7763ae0b14dcafe"]
 
   tags = {
-    Name = "red_hat_linux_os_emi"
+    Name = "catalogue"
   }
 }
 resource "aws_instance" "cart" {
@@ -31,7 +31,7 @@ resource "aws_instance" "cart" {
   vpc_security_group_ids = ["sg-0f7763ae0b14dcafe"]
 
   tags = {
-    Name = "red_hat_linux_os_emi"
+    Name = "cart"
   }
 }
 resource "aws_instance" "redis" {
@@ -40,7 +40,7 @@ resource "aws_instance" "redis" {
   vpc_security_group_ids = ["sg-0f7763ae0b14dcafe"]
 
   tags = {
-    Name = "red_hat_linux_os_emi"
+    Name = "redis"
   }
 }
 resource "aws_instance" "user" {
@@ -49,7 +49,7 @@ resource "aws_instance" "user" {
   vpc_security_group_ids = ["sg-0f7763ae0b14dcafe"]
 
   tags = {
-    Name = "red_hat_linux_os_emi"
+    Name = "user"
   }
 }
 resource "aws_instance" "mysql" {
@@ -58,7 +58,7 @@ resource "aws_instance" "mysql" {
   vpc_security_group_ids = ["sg-0f7763ae0b14dcafe"]
 
   tags = {
-    Name = "red_hat_linux_os_emi"
+    Name = "mysql"
   }
 }
 resource "aws_instance" "shipping" {
@@ -67,7 +67,7 @@ resource "aws_instance" "shipping" {
   vpc_security_group_ids = ["sg-0f7763ae0b14dcafe"]
 
   tags = {
-    Name = "red_hat_linux_os_emi"
+    Name = "shipping"
   }
 }
 resource "aws_instance" "rabbitmq" {
@@ -76,7 +76,7 @@ resource "aws_instance" "rabbitmq" {
   vpc_security_group_ids = ["sg-0f7763ae0b14dcafe"]
 
   tags = {
-    Name = "red_hat_linux_os_emi"
+    Name = "rabbitmq"
   }
 }
 resource "aws_instance" "payment" {
@@ -85,6 +85,6 @@ resource "aws_instance" "payment" {
   vpc_security_group_ids = ["sg-0f7763ae0b14dcafe"]
 
   tags = {
-    Name = "red_hat_linux_os_emi"
+    Name = "payment"
   }
 }
