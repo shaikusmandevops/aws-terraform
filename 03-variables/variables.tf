@@ -62,5 +62,5 @@ output "try_function" {
 }
 
 output "lookup_function" {
-  value = lookup(var.fruit_names_vars["apple"], "price" , zero )
+  value = lookup(var.fruit_names_vars["apple"], "price" , 2 )
 }
