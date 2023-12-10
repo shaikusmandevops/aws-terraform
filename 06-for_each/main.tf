@@ -1,10 +1,10 @@
 variable "security_groups_for_services" {
   default = {
     frontend ={
-      name=frontend_sg
+      name="frontend_sg"
     }
     catalogue={
-      name=catalogue_sg
+      name="catalogue_sg"
     }
   }
 }
