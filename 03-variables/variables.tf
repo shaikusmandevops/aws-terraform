@@ -55,5 +55,12 @@ variable "fruit_names_vars" {
 
 output "fruit_names_vars" {
   value = "The price of apple=${var.fruit_names_vars["apple"].stock} quality of stock =${var.fruit_names_vars["apple"].stock_quality} if stock available=${var.fruit_names_vars["apple"].stock_availability}"
+}
 
+output "try_function" {
+  value = try(var.fruit_name_list[2], 2)
+}
+
+output "lookup_function" {
+  value = lookup(var.fruit_names_vars["apple"], price, null )
 }
