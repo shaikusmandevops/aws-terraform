@@ -43,3 +43,17 @@ variable "fruit_name_maps_map" {
 output "fruit_name_maps_map_apple_stock" {
   value = var.fruit_name_maps_map["apple"].stock
 }
+variable "fruit_names_vars" {
+  default = {
+    apple={
+      stock=100
+      stock_quality="good"
+      stock_availability=true
+    }
+  }
+}
+
+output "fruit_names_vars" {
+  value = "The price of apple=${var.fruit_names_vars["apple"].stock} quality of stock =${var.fruit_names_vars["apple"].stock_quality} if stock available=${var.fruit_names_vars["apple"].stock_availability}"
+
+}
