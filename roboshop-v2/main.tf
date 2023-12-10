@@ -35,14 +35,14 @@ resource "aws_instance" "instance" {
     Name = lookup(each.value,"name",null)
   }
 }
-#resource "aws_route53_record" "frontend" {
-#  for_each = var.components
-#  zone_id = var.zone_id
-#  name    = "${lookup(each.value,"name",null)}.usmandevops.online"
-#  type    = "A"
-#  ttl     = 30
-#  records = [aws_instance.frontend.private_ip]
-#}
+resource "aws_route53_record" "frontend" {
+  for_each = var.components
+  zone_id = var.zone_id
+  name    = "${lookup(each.value,"name",null)}.usmandevops.online"
+  type    = "A"
+  ttl     = 30
+  records =  [lookup(lookup(aws_instance.instance, each.key, null), "private_ip", null)]
+}
 
 output "aws_ami_data" {
   value = aws_instance.instance
