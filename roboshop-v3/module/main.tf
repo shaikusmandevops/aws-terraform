@@ -21,7 +21,7 @@ resource "null_resource" "ansible" {
   ]
   provisioner "local-exec" {
     command = <<EOF
-        cd /root/ansible/roboshop-ansible/
+        cd /root/ansible/roboshop-ansible
         git pull
         ansible-playbook -i ${var.name}-dev.usmandevops.online, main.yml -e ansible_ssh_user=centos -e ansible_ssh_private_key_file=/root/auth_file/usmanppk.pem -e component=${var.name}
     EOF
