@@ -40,3 +40,9 @@ components = {
       instance_type = "t3.small"
     }
   }
+vpc_security_group_ids = {
+  default = ["sg-0f7763ae0b14dcafe"]
+}
+zone_id ={
+  default = "Z00157522ZJVN353O1F1V"
+}
