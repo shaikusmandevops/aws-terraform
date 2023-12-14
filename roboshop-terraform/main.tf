@@ -5,5 +5,4 @@ module "test" {
   vpc_security_group_ids =var.vpc_security_group_ids
   zone_id=var.zone_id
   name=each.value["name"]
-
 }
