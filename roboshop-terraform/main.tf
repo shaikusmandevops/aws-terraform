@@ -1,4 +1,4 @@
-module "test" {
+module "components" {
   source = "git::https://github.com/shaikusmandevops/tf-module-roboshop.git"
   for_each = var.components
   instance_type =each.value["instance_type"]
