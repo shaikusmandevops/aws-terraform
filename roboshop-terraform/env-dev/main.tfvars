@@ -40,8 +40,8 @@ components = {
     instance_type = "t3.micro"
   }
 }
-security_groups= {
-  default = ["sg-097db4576709e90b8"]
+security_groups={
+  default = ["sg-02062d690fc3cb35e"]
 }
 zone_id ={
   default = "Z00157522ZJVN353O1F1V"
