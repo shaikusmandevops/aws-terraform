@@ -40,9 +40,10 @@ components = {
     instance_type = "t3.micro"
   }
 }
-vpc_security_group_ids = {
+vpc_security_group_ids= {
   default = ["sg-097db4576709e90b8"]
 }
 zone_id ={
   default = "Z00157522ZJVN353O1F1V"
 }
+
