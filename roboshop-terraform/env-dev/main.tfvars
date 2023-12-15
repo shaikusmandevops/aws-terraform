@@ -41,7 +41,7 @@ components = {
   }
 }
 vpc_security_group_ids = {
-  default = ["sg-0f7763ae0b14dcafe"]
+  default = ["sg-097db4576709e90b8"]
 }
 zone_id ={
   default = "Z00157522ZJVN353O1F1V"
