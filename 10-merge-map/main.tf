@@ -21,5 +21,5 @@ variable "vpc" {
 }
 
 output "all_subnets" {
-  value = var.vpc["main"]["subnets"]
+  value = [for k,v in lookup(lookup(var.vpc, "main","null"), "subnets", "null"):v]
 }
