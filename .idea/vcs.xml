@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/learn-jenkins" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/roboshop-jenkins" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/tf-module-vpc" vcs="Git" />
   </component>
 </project>
